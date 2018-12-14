@@ -1,4 +1,4 @@
-import java.awt.print.Book;
+//import java.awt.print.Book;
 import java.io.BufferedReader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -79,51 +79,5 @@ public class CSV {
 
 }
 
-class Book {
-    private String name;
-    private int price;
-    private String author;
 
-    public Book(String name, int price, String author) {
-        this.name = name;
-        this.price = price;
-        this.author = author;
-    }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    @Override
-    public String toString() {
-        return "Book [name=" + name + ", price=" + price + ", author=" + author
-                + "]";
-    }
-
-}
-
-Output
-        Book [name=Effective Java, price=42, author=Joshua Bloch]
-        Book [name=Head First Java, price=39, author=Kathy Sierra]
-        Book [name=Head First Design Pattern, price=44, author=Kathy Sierra]
-        Book [name=Introduction to Algorithm, price=72, author=Thomas Cormen]
